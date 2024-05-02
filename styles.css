@@ -1,0 +1,76 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.hedimg {
+width: 30px;
+height: 30px;
+}
+nav{
+    width: 100%;
+    height: 75px;
+    background-color: aquamarine;
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 50px;
+    position: fixed;
+    z-index: 1;
+}
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+.menu {
+    width: 39%;
+    justify-content: right;
+    display: flex;
+    list-style: none;
+}
+.menu li {
+    margin-left: 20px;
+}
+.menu li a{
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.menu li a:hover{
+    color:#ccc ;
+}
+.search {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+.search form{
+    display: flex;
+    margin: 0;
+}
+.search input{
+    padding:10px ;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size:  16px; ;
+}
+.search input:hover{
+    border:1px solid #72a0d4;
+}
+.search button{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    font-size: 19px;
+    cursor: pointer;
+}
+.search button:hover{
+    background-color: #ccc;
+}
