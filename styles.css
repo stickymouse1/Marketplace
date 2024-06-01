@@ -1,76 +1,98 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: sans-serif;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
 }
-.hedimg {
-width: 30px;
-height: 30px;
+
+header {
+    background-color: #333;
+    padding: 10px 0;
 }
-nav{
-    width: 100%;
-    height: 75px;
-    background-color: aquamarine;
-    color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding:0px 50px;
-    position: fixed;
-    z-index: 1;
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
-.logo {
-    font-size: 32px;
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
     font-weight: bold;
 }
-.menu {
-    width: 24%;
-    justify-content: right;
-    display: flex;
-    list-style: none;
+
+nav ul li a:hover {
+    text-decoration: underline;
 }
-.menu li {
-    margin-left: 20px;
+
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
 }
-.menu li a{
-    font-size: 19px;
-    color: black;
-    text-decoration: none;
-    transition: 0.3s ease;
+
+.welcome {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
-.menu li a:hover{
-    color:#ccc ;
-}
-.search {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
-.search form{
-    display: flex;
-    margin: 0;
-}
-.search input{
-    padding:10px ;
-    border: 1px solid #ddd;
-    outline: none;
-    border-radius: 5px;
-    margin-right: 10px;
-    font-size:  16px; ;
-}
-.search input:hover{
-    border:1px solid #72a0d4;
-}
-.search button{
-    padding: 10px;
-    background-color: #fff;
-    border: none;
-    border-radius: 5px;
+
+.welcome h1 {
     color: #333;
-    font-size: 19px;
-    cursor: pointer;
 }
-.search button:hover{
-    background-color: #ccc;
+
+.welcome p {
+    line-height: 1.6;
+    color: #666;
+}
+
+.search-container {
+    margin-top: 20px;
+}
+
+.search-container input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.or-text {
+    margin: 20px 0;
+    font-size: 16px;
+    color: #666;
+}
+
+.search-container .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.search-container .button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
